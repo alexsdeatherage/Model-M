@@ -1,5 +1,7 @@
+/* The follow styling was taken from the carosel example in Bootstrap 5 shown at https://getbootstrap.com/docs/5.0/examples/carousel/
+
 /* The following styling relates to the carousel animation, i.e resizing the images, positioning the captions, etc..
-Also, we 
+
 
 /* GLOBAL STYLES
 -------------------------------------------------- */
@@ -12,7 +14,9 @@ body {
     color: #5a5a5a;
   }
   
-  
+#hide{
+  display: none;
+}
   /* CUSTOMIZE THE CAROUSEL
   -------------------------------------------------- */
   
@@ -38,42 +42,6 @@ body {
     height: 30em;
   }
   
-  
-  /* MARKETING CONTENT
-  -------------------------------------------------- */
-  
-  /* Center align the text within the three columns below the carousel */
-  .marketing .col-lg-4 {
-    margin-bottom: 1.5em;
-    text-align: center;
-  }
-  .marketing h2 {
-    font-weight: 400;
-  }
-  /* rtl:begin:ignore */
-  .marketing .col-lg-4 p {
-    margin-right: .75em;
-    margin-left: .75em;
-  }
-  /* rtl:end:ignore */
-  
-  
-  /* Featurettes
-  ------------------------- */
-  
-  .featurette-divider {
-    margin: 5em 0; /* Space out the Bootstrap <hr> more */
-  }
-  
-  /* Thin out the marketing headings */
-  .featurette-heading {
-    font-weight: 300;
-    line-height: 1;
-    /* rtl:remove */
-    letter-spacing: -.05em;
-  }
-  
-  
   /* RESPONSIVE CSS
   -------------------------------------------------- */
   
@@ -84,15 +52,4 @@ body {
       font-size: 1.25em;
       line-height: 1.4;
     }
-  
-    .featurette-heading {
-      font-size: 50px;
-    }
   }
-  
-  @media (min-width: 62em) {
-    .featurette-heading {
-      margin-top: 7em;
-    }
-  }
-  
